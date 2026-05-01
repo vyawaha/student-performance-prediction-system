@@ -84,26 +84,48 @@ Student-Performance-Prediction/
 ├── requirements.txt
 ├── README.md
 └── main.py
+
+## 🚀 Project Highlights
+
+- End-to-end Machine Learning pipeline
+- Real-time prediction using FastAPI
+- Model interpretability using feature importance
+- Production-style project structure
+- Clean modular codebase suitable for scaling
+
 🚀 Installation & Setup
+
 1️⃣ Clone Repository
 git clone https://github.com/vyawaha/student-performance-prediction-system.git
 cd student-performance-prediction-system
+
 2️⃣ Create Virtual Environment
 python -m venv venv
 .\venv\Scripts\activate
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Generate Dataset
 python src/data_generator.py
+
+
 5️⃣ Train Model
 python src/train.py
+
 6️⃣ Run FastAPI Server
 uvicorn serving.app:app --reload
+
 🌐 API Endpoints
+
 🏠 Home
+
 GET /
+
 🎯 Predict Student Performance
+
 POST /predict
+
 Sample Request:
 {
   "attendance_pct": 70,
@@ -114,37 +136,48 @@ Sample Request:
   "lms_logins_wk": 7,
   "forum_posts": 2
 }
+
 Sample Response:
 {
   "prediction": 0,
   "probability": 0.46,
   "status": "At Risk Student"
 }
+
 📊 Model Performance
+
 Metric	Score
 Accuracy	87%
 F1 Score	0.85
 ROC-AUC	0.91
+
 📸 Outputs & Visualizations
 📉 Confusion Matrix
+![Confusion Matrix](outputs/confusion_matrix.png)
 
 📈 ROC Curve
+![ROC Curve](outputs/roc_curve.png)
 
 📊 Feature Importance
+![Feature Importance](outputs/feature_importance.png)
 
 🖥️ API Interface
 Swagger UI
+![Swagger UI](images/swagger_docs.png)
 
 🧪 Sample Predictions
 ⚠️ At Risk Student
+![At Risk Student](images/weak_student_output.png)
 
 ✅ High Performer
+![High Performer](images/strong_student_output.png)
 
 🔍 Key Insights
 Attendance is the strongest predictor of performance
 Quiz and assignment scores strongly impact outcomes
 LMS engagement correlates with success
 Low study hours indicate high risk
+
 🌍 Real-World Applications
 
 Used in:
@@ -173,19 +206,10 @@ Machine Learning
 Backend Systems
 Data Analytics
 Production ML pipelines
-⭐ Why This Project is Recruiter-Ready
-
-✔ End-to-end ML pipeline
-✔ Real-world EdTech use case
-✔ FastAPI deployment
-✔ Model interpretability
-✔ Production-style architecture
-✔ Visual analytics
 
 🏁 Final Result
 
 This system successfully predicts:
-
 Student risk level
 Academic performance category
 Probability of success/failure
