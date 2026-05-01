@@ -167,10 +167,12 @@ Swagger UI
 
 🧪 Sample Predictions
 ⚠️ At Risk Student
-![At Risk Student](images/weak_student_output.png)
+## ⚠️ At Risk Student
+
+![At Risk Student](images/weak_student_prediction2.png)
 
 ✅ High Performer
-![High Performer](images/strong_student_output.png)
+![High Performer Student](images/good_student_prediction2.png)
 
 🔍 Key Insights
 Attendance is the strongest predictor of performance
