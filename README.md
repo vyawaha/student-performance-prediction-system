@@ -1,24 +1,21 @@
-🚀 Student Performance Prediction System
+# 🚀 Student Performance Prediction System
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-XGBoost-orange)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+![Repo Size](https://img.shields.io/github/repo-size/vyawaha/student-performance-prediction-system)
+![Last Commit](https://img.shields.io/github/last-commit/vyawaha/student-performance-prediction-system)
+![Issues](https://img.shields.io/github/issues/vyawaha/student-performance-prediction-system)
+![Stars](https://img.shields.io/github/stars/vyawaha/student-performance-prediction-system?style=social)
 
+## 📌 Overview
 
+AI-powered student performance prediction system that helps educators identify at-risk students early using machine learning and behavioral analytics.
 
-
-
-
-
-
-📌 Overview
-
-The Student Performance Prediction System is an end-to-end Machine Learning project that predicts student academic outcomes using behavioral and academic indicators such as:
-
-Attendance rate
-Study hours per week
-Quiz performance
-Assignment scores
-Midterm results
-LMS engagement activity
+The Student Performance Prediction System is an end-to-end Machine Learning project that predicts student academic performance using behavioral and academic indicators.
 
 It identifies whether a student is:
 
@@ -26,40 +23,42 @@ It identifies whether a student is:
 ⚠️ At Risk Student
 📊 Average Performer
 
-This project simulates real-world EdTech analytics systems used in universities and learning platforms.
+This system simulates real-world EdTech analytics platforms used in universities and online learning systems.
 
 🎯 Problem Statement
 
-Educational institutions often fail to detect struggling students early.
+Educational institutions struggle to:
 
-This system solves that by:
+Detect struggling students early
+Reduce dropout rates
+Personalize learning support
+Improve academic outcomes
 
-Predicting academic risk early
-Enabling timely intervention
-Improving student success rates
-Reducing dropout probability
-🧠 Machine Learning Approach
-Type: Supervised Learning (Classification)
+This project solves that using predictive analytics + machine learning.
+
+🧠 Machine Learning Pipeline
+Supervised Learning (Classification)
 Model: XGBoost Classifier
-Pipeline: Scikit-learn Pipeline
-Evaluation Metrics:
+Preprocessing: Scikit-learn Pipeline
+Evaluation:
 Accuracy
 F1 Score
 ROC-AUC
-Explainability: Feature Importance Analysis
+Explainability:
+Feature Importance Analysis
 
-🏗️ Architecture
+🏗️ System Architecture
 Student Data
    ↓
-Data Preprocessing
+Data Generation / Collection
    ↓
-Feature Engineering
+Preprocessing & Feature Engineering
    ↓
 XGBoost Model Training
    ↓
 FastAPI Backend
    ↓
-Swagger Testing Interface
+Swagger API Testing
    ↓
 Prediction Output (Risk / Safe)
 
@@ -67,10 +66,10 @@ Prediction Output (Risk / Safe)
 Layer	Technology
 Language	Python 3.11
 ML Model	XGBoost
-API Framework	FastAPI
+API	FastAPI
 Data Processing	Pandas, NumPy
 Visualization	Matplotlib, Seaborn
-Model Explainability	Feature Importance
+Explainability	Feature Importance
 Server	Uvicorn
 
 📂 Project Structure
@@ -85,11 +84,10 @@ Student-Performance-Prediction/
 ├── requirements.txt
 ├── README.md
 └── main.py
-
-🚀 How to Run Locally
+🚀 Installation & Setup
 1️⃣ Clone Repository
-git clone https://github.com/vyawaha/student-performance-prediction.git
-cd student-performance-prediction
+git clone https://github.com/vyawaha/student-performance-prediction-system.git
+cd student-performance-prediction-system
 2️⃣ Create Virtual Environment
 python -m venv venv
 .\venv\Scripts\activate
@@ -99,15 +97,11 @@ pip install -r requirements.txt
 python src/data_generator.py
 5️⃣ Train Model
 python src/train.py
-6️⃣ Run API Server
+6️⃣ Run FastAPI Server
 uvicorn serving.app:app --reload
-🌐 Access API
-Swagger UI:
-http://127.0.0.1:8000/docs
-📡 API Endpoints
+🌐 API Endpoints
 🏠 Home
 GET /
-
 🎯 Predict Student Performance
 POST /predict
 Sample Request:
@@ -126,42 +120,31 @@ Sample Response:
   "probability": 0.46,
   "status": "At Risk Student"
 }
-
 📊 Model Performance
 Metric	Score
 Accuracy	87%
 F1 Score	0.85
 ROC-AUC	0.91
-
 📸 Outputs & Visualizations
 📉 Confusion Matrix
 
-
 📈 ROC Curve
-
 
 📊 Feature Importance
 
-
 🖥️ API Interface
-
 Swagger UI
 
-
-🧪 Prediction Samples
-
+🧪 Sample Predictions
 ⚠️ At Risk Student
-
 
 ✅ High Performer
 
-
 🔍 Key Insights
-Attendance is the strongest predictor of success
-Quiz + assignment scores strongly influence outcomes
-LMS engagement correlates with performance
-Low study hours → high failure risk
-
+Attendance is the strongest predictor of performance
+Quiz and assignment scores strongly impact outcomes
+LMS engagement correlates with success
+Low study hours indicate high risk
 🌍 Real-World Applications
 
 Used in:
@@ -176,11 +159,33 @@ Used in:
 SHAP explainability integration
 Next.js dashboard UI
 Docker containerization
-Cloud deployment (AWS/Azure)
+Cloud deployment (AWS / Render)
 MLflow tracking system
-Real-time student monitoring
+Real-time prediction system
 
 👨‍💻 Author
 Muktai Vyawahare
-Student ML Project (Portfolio Build)
-Focused on Data Science + ML Engineering + Backend Systems
+ML Engineering Portfolio Project
+
+Focused on:
+
+Machine Learning
+Backend Systems
+Data Analytics
+Production ML pipelines
+⭐ Why This Project is Recruiter-Ready
+
+✔ End-to-end ML pipeline
+✔ Real-world EdTech use case
+✔ FastAPI deployment
+✔ Model interpretability
+✔ Production-style architecture
+✔ Visual analytics
+
+🏁 Final Result
+
+This system successfully predicts:
+
+Student risk level
+Academic performance category
+Probability of success/failure
